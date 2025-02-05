@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Minimalist YouTube",
+    "version": "1.0",
+    "description": "Tweaks YouTube CSS to reduce distractions. At the moment it just makes video thumbnails black unless hovered.",
+    "permissions": [
+    ],
+    "host_permissions": ["*://www.youtube.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "css": ["style.css"]
+      }
+    ]
+  }
