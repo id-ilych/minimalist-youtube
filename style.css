@@ -7,6 +7,16 @@
 	filter: brightness(100%);
 }
 
+#items > ytm-shorts-lockup-view-model-v2 > ytm-shorts-lockup-view-model > a > div > img {
+	filter: brightness(0%);
+	transition: filter 0.5s ease-in-out;
+}
+
+#items > ytm-shorts-lockup-view-model-v2 > ytm-shorts-lockup-view-model > a > div > img:hover {
+	filter: brightness(100%);
+}
+
+
 #content > yt-lockup-view-model > div > a {
 	filter: brightness(0%);
 	transition: filter 0.5s ease-in-out;
