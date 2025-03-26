@@ -1,53 +1,108 @@
-#thumbnail > yt-image > img {
+/* BEGIN Subscriptions page Shorts / Reels block */
+/* !!!NOTE!!! it will be fully hidden in contrast to regular thumbnails who are blacked out unless hovered */
+#contents > ytd-item-section-renderer:has(ytd-reel-shelf-renderer) {
+	display: none;
+}
+/* END --------------------------------------------------------------------- */
+
+
+
+/* BEGIN Home page video thumbnails */
+#thumbnail img {
 	filter: brightness(0%);
 	transition: filter 0.5s ease-in-out;
 }
 
-#thumbnail > yt-image > img:hover {
+#thumbnail:hover img {
 	filter: brightness(100%);
 }
+/* END --------------------------------------------------------------------- */
 
-#items > yt-lockup-view-model > div > a > yt-thumbnail-view-model {
+
+
+/* BEGIN Home page playlist thumbnails */
+/* > thumbnail */
+#content > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model div.yt-thumbnail-view-model__image {
 	filter: brightness(0%);
 	transition: filter 0.5s ease-in-out;
 }
 
-#items > yt-lockup-view-model > div > a > yt-thumbnail-view-model:hover {
+#content > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model:hover div.yt-thumbnail-view-model__image {
 	filter: brightness(100%);
 }
 
-#contents > yt-lockup-view-model > div > a > yt-thumbnail-view-model {
+/* > blurred filler */
+#content > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model div.yt-thumbnail-view-model__blurred-image {
 	filter: brightness(0%);
 	transition: filter 0.5s ease-in-out;
 }
 
-#contents > yt-lockup-view-model > div > a > yt-thumbnail-view-model:hover {
+#content > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model:hover div.yt-thumbnail-view-model__blurred-image {
 	filter: brightness(100%);
 }
 
-#items > ytm-shorts-lockup-view-model-v2 > ytm-shorts-lockup-view-model > a > div > img {
+/* > stack of cards */
+#content > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model div.collections-stack-wiz__collection-stack1 {
 	filter: brightness(0%);
 	transition: filter 0.5s ease-in-out;
 }
 
-#items > ytm-shorts-lockup-view-model-v2 > ytm-shorts-lockup-view-model > a > div > img:hover {
+#content > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model:hover div.collections-stack-wiz__collection-stack1 {
 	filter: brightness(100%);
 }
 
-#contents > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model {
+#content > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model div.collections-stack-wiz__collection-stack2 {
 	filter: brightness(0%);
 	transition: filter 0.5s ease-in-out;
 }
 
-#contents > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model:hover {
+#content > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model:hover div.collections-stack-wiz__collection-stack2 {
 	filter: brightness(100%);
 }
+/* END --------------------------------------------------------------------- */
 
-#content > yt-lockup-view-model > div > a {
+
+
+/* BEGIN Player suggestions (rightbar) video thumbnail */
+#contents > yt-lockup-view-model > div > a > yt-thumbnail-view-model img {
 	filter: brightness(0%);
 	transition: filter 0.5s ease-in-out;
 }
 
-#content > yt-lockup-view-model > div > a:hover {
+#contents > yt-lockup-view-model > div > a > yt-thumbnail-view-model:hover img {
 	filter: brightness(100%);
 }
+/* END --------------------------------------------------------------------- */
+
+
+
+/* BEGIN Player suggestions (rightbar) video thumbnail */
+/* > thumbnail */
+#contents > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model img {
+	filter: brightness(0%);
+	transition: filter 0.5s ease-in-out;
+}
+
+#contents > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model:hover img {
+	filter: brightness(100%);
+}
+
+/* > stack of cards */
+#contents > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model div.collections-stack-wiz__collection-stack1 {
+	filter: brightness(0%);
+	transition: filter 0.5s ease-in-out;
+}
+
+#contents > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model:hover div.collections-stack-wiz__collection-stack1 {
+	filter: brightness(100%);
+}
+
+#contents > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model div.collections-stack-wiz__collection-stack2 {
+	filter: brightness(0%);
+	transition: filter 0.5s ease-in-out;
+}
+
+#contents > yt-lockup-view-model > div > a > yt-collection-thumbnail-view-model:hover div.collections-stack-wiz__collection-stack2 {
+	filter: brightness(100%);
+}
+/* END --------------------------------------------------------------------- */
