@@ -6,6 +6,13 @@
 /* END --------------------------------------------------------------------- */
 
 
+/* BEGIN Home page Shorts / Reels block */
+#contents > ytd-rich-section-renderer:has(ytm-shorts-lockup-view-model-v2) {
+	display: none;
+}
+/* END --------------------------------------------------------------------- */
+
+
 
 /* BEGIN Home page video thumbnails */
 #thumbnail img {
