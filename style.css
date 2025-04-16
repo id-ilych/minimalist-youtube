@@ -6,8 +6,19 @@
 /* END --------------------------------------------------------------------- */
 
 
+
 /* BEGIN Home page Shorts / Reels block */
+/* !!!NOTE!!! it will be fully hidden in contrast to regular thumbnails who are blacked out unless hovered */
 #contents > ytd-rich-section-renderer:has(ytm-shorts-lockup-view-model-v2) {
+	display: none;
+}
+/* END --------------------------------------------------------------------- */
+
+
+
+/* BEGIN Home page Posts block */
+/* !!!NOTE!!! it will be fully hidden in contrast to regular thumbnails who are blacked out unless hovered */
+#contents > ytd-rich-section-renderer:has(ytd-post-renderer) {
 	display: none;
 }
 /* END --------------------------------------------------------------------- */
